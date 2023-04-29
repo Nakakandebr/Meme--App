@@ -10,9 +10,11 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/meme2"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="80dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/meme2" />
 
     <TextView
         android:id="@+id/tvPrevious"

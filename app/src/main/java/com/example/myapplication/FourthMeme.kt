@@ -7,21 +7,20 @@ import android.os.Bundle
 import android.widget.TextView
 
 class FourthMeme : AppCompatActivity() {
-    lateinit var tvNextpagefive:TextView
-    lateinit var tvprev:TextView
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+        lateinit var tvfifth: TextView
+        lateinit var tvPrev: TextView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourth_meme)
-        tvNextpagefive = findViewById(R.id.tvNextpagefive)
-        tvprev = findViewById(R.id.tvPrev)
-        tvNextpagefive.setOnClickListener {
-            val intent = Intent(this, FifthPage::class.java)
+        tvfifth = findViewById(R.id.tvfifth)
+        tvPrev = findViewById(R.id.tvPrev)
+        tvfifth.setOnClickListener {
+            val intent = Intent(this, Fmeme::class.java)
             startActivity(intent)
-
         }
-        tvprev.setOnClickListener {
-            val intent = Intent(this, SecondMeme::class.java)
+        tvPrev.setOnClickListener {
+            val intent = Intent(this, Thirdmeme::class.java)
             startActivity(intent)
         }
     }
