@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7E6C6C"
     tools:context=".Thirdmeme">
 
     <ImageView
@@ -41,19 +42,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tiltext"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+    <TextView
+        android:id="@+id/texts"
+        android:layout_width="361dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:text="its really about whta you want to call it "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0277BD"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ettext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="thats impossible or possible" />
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
